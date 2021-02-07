@@ -1,7 +1,7 @@
 const yearMax = {
-  2018: 581,
-  2019: 1123,
-  2020: 19212,
+  2018: 299,
+  2019: 287,
+  2020: 11573,
 };
 let selectedYear = "2018";
 
@@ -12,8 +12,8 @@ const map = new mapboxgl.Map({
   style: "mapbox://styles/mapbox/dark-v10",
   maxZoom: 22,
   minZoom: 8,
-  maxBounds: [7.3, 51.6, 8, 52.1],
-  bounds: [7.6, 51.98, 7.65, 51.94], //initial bounds
+  maxBounds: [11, 51, 12, 53],
+  bounds: [11.4, 51.9, 11.8, 52.3], //initial bounds
 });
 
 map.addControl(new mapboxgl.NavigationControl(), "top-right");
@@ -29,7 +29,7 @@ map.on("sourcedata", spinnerHandler);
 map.on("load", function () {
   map.addSource("stadtradeln", {
     type: "vector",
-    bounds: [7.5, 51.8, 7.8, 52.01], // [sw.lng, sw.lat, ne.lng, ne.lat]
+    bounds: [11.4, 51.9, 11.8, 52.3], // [sw.lng, sw.lat, ne.lng, ne.lat]
     maxzoom: 14,
     tiles: [tilesBaseDomain + "assets/tiles/{z}/{x}/{y}.pbf"],
     attribution:

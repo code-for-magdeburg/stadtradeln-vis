@@ -1,6 +1,9 @@
-# Stadtradeln Münster
+# Stadtradeln Magdeburg
 
-The page is available at [https://codeformuenster.org/stadtradeln-vis](https://codeformuenster.org/stadtradeln-vis)
+Special Thanks to [Code for Münster](https://github.com/codeformuenster) as this is a modified fork of their [Stadtradeln-Vis](https://codeformuenster.org/stadtradeln-vis) project!
+
+The page is available at [https://code-for-magdeburg.github.io/stadtradeln-vis](https://code-for-magdeburg.github.io/stadtradeln-vis)
+
 
 Uses
 
@@ -47,10 +50,12 @@ Quellenvermerk: Grubitzsch P., Lißner S., Huber S., Springer T., [2021] Technis
 
 [Creative Commons Attribution - NonCommercial (CC BY-NC)](https://creativecommons.org/licenses/by-nc/)
 
-## Extract Münster
+## Extract Magdeburg
 
 ```
-grep -E "7\.[5-8].*,(51\.(8|9)|52\.0[01])" heatmap_2019.csv > heatmap_2019_ms.csv
+grep -E "11\.[4-8].*,(51\.(8|9)|52\.[0-3])" heatmap_2018.csv > heatmap_2018_md.csv
+grep -E "11\.[4-8].*,(51\.(8|9)|52\.[0-3])" heatmap_2019.csv > heatmap_2019_md.csv
+grep -E "11\.[4-8].*,(51\.(8|9)|52\.[0-3])" heatmap_2020.csv > heatmap_2020_md.csv
 ```
 
 ## Convert to geojson & vector tiles

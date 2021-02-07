@@ -7,7 +7,7 @@ const years = [2018, 2019, 2020];
 const precision = 6;
 
 const convert = async (year) => {
-  const csv = await readFile(`./heatmap_${year}_ms.csv`);
+  const csv = await readFile(`./heatmap_${year}_md.csv`);
 
   const lines = csv.toString().split("\n");
 
