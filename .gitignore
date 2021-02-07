@@ -1,5 +1,4 @@
 *.csv
 *.geojson
 node_modules
-assets/tiles
 .idea
