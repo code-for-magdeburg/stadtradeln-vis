@@ -3,7 +3,7 @@ const yearMax = {
   2019: 287,
   2020: 11573,
 };
-let selectedYear = "2018";
+let selectedYear = "2020";
 
 const tilesBaseDomain = window.location.href;
 
