@@ -5,7 +5,8 @@ const yearMax = {
 };
 let selectedYear = "2020";
 
-const tilesBaseDomain = window.location.href;
+//const tilesBaseDomain = window.location.href;
+const tilesBaseDomain = "https://code-for-magdeburg.github.io/stadtradeln-vis/";
 
 const map = new mapboxgl.Map({
   container: "map",
